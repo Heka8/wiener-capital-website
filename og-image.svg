@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow1" cx="25%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0c0c0c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#cd7f32" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0c0c0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#cd7f32"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#cd7f32" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0c0c0c"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Border -->
+  <rect x="24" y="24" width="1152" height="582" rx="4" fill="none" stroke="url(#borderGrad)" stroke-width="1"/>
+
+  <!-- Decorative line -->
+  <line x1="100" y1="315" x2="160" y2="315" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Logo W -->
+  <text x="100" y="260" font-family="Inter, Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="url(#goldGrad)">W</text>
+
+  <!-- Company name -->
+  <text x="168" y="260" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="6" fill="#e8e2d6">IENER CAPITAL</text>
+
+  <!-- Tagline -->
+  <text x="100" y="370" font-family="Inter, Arial, Helvetica, sans-serif" font-size="28" font-weight="300" fill="#9a8e7a">Development &amp; Investment</text>
+
+  <!-- Description -->
+  <text x="100" y="430" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#9a8e7a" opacity="0.7">Advancing challenging global technologies</text>
+
+  <!-- Bottom accent dots -->
+  <circle cx="100" cy="540" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="116" cy="540" r="3" fill="#cd7f32" opacity="0.35"/>
+  <circle cx="132" cy="540" r="3" fill="#c9a84c" opacity="0.2"/>
+</svg>
