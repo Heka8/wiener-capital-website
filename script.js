@@ -21,26 +21,3 @@ if (navToggle && navLinks) {
         });
     });
 }
-
-// Cookie Consent Banner
-(function () {
-    const banner = document.getElementById('cookieBanner');
-    const acceptBtn = document.getElementById('cookieAccept');
-    const rejectBtn = document.getElementById('cookieReject');
-
-    if (!banner || !acceptBtn || !rejectBtn) return;
-
-    if (!localStorage.getItem('cookieConsent')) {
-        banner.classList.add('visible');
-    }
-
-    acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'accepted');
-        banner.classList.remove('visible');
-    });
-
-    rejectBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'rejected');
-        banner.classList.remove('visible');
-    });
-})();

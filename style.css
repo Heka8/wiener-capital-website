@@ -3,6 +3,25 @@
    Color palette inspired by kohtas.com
    =================================== */
 
+/* ===== Self-hosted Inter (variable, SIL Open Font License) ===== */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('fonts/inter-latin-wght-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('fonts/inter-latin-ext-wght-normal.woff2') format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
     --color-bg-dark: #0c0c0c;
     --color-bg-section: #111111;
@@ -541,62 +560,6 @@ img {
     color: var(--color-primary);
 }
 
-/* ===== Cookie Consent Banner ===== */
-.cookie-banner {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: var(--color-bg-section);
-    border-top: 1px solid var(--color-border);
-    padding: 20px 0;
-}
-
-.cookie-banner.visible {
-    display: block;
-}
-
-.cookie-banner-content {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.cookie-banner-content p {
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    margin: 0;
-    line-height: 1.6;
-}
-
-.cookie-banner-actions {
-    display: flex;
-    gap: 12px;
-    flex-shrink: 0;
-}
-
-.cookie-btn {
-    padding: 10px 24px;
-    font-size: 0.8rem;
-}
-
-.cookie-btn-reject {
-    background: transparent;
-    color: var(--color-text-muted);
-    border: 1px solid var(--color-border);
-}
-
-.cookie-btn-reject:hover {
-    color: var(--color-white);
-    border-color: var(--color-text-muted);
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -642,10 +605,5 @@ img {
 
     .legal-content {
         padding: 120px 0 60px;
-    }
-
-    .cookie-banner-content {
-        flex-direction: column;
-        text-align: center;
     }
 }

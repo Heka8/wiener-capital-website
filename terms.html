@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Terms of Service — Wiener Capital Oy</title>
     <meta name="description" content="Terms of Service for the Wiener Capital Oy website.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -88,17 +87,6 @@
             <p class="footer-copy">&copy; 2026 Wiener Capital Oy. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-banner-content">
-            <p>We use cookies to improve your experience and analyse site traffic. <a href="privacy.html">Learn more</a></p>
-            <div class="cookie-banner-actions">
-                <button class="btn btn-primary cookie-btn" id="cookieAccept">Accept</button>
-                <button class="btn cookie-btn cookie-btn-reject" id="cookieReject">Reject</button>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
